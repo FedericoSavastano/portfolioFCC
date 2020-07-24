@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href=".././css/portfoliomio.css" />
+<link rel="stylesheet" href=".././css/traduccion.css">
+<link rel="stylesheet" href=".././css/trabajos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+
+
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    var arrLang = {
+        'en': {
+            'trabajos': 'Works',
+            'lenguajes': 'Languages',
+            'contacto': 'Contact',
+            'vertodos': 'See All',
+            'todos': 'All',
+             
+            'versitio': 'View Site',
+            'vercodigo': 'View Code',
+            'volver': 'Back',
+            'desc1': 'CRUD developed on Java with SpringBoot.',
+            'desc2': 'For developing this software I worked with an already built architecture.',
+            'desc3': 'On top of it I formed the route for the Creating, Reading Uploading and Deleting of data,',
+            'desc4': 'creating layers of HTML, jQuery and Javascript, along with SpringBoot I made the Java layers of Rest, Dao and Service and the Entity connected to the Data Base. '
+        },
+        'es': {
+            'trabajos': 'Trabajos',
+            'lenguajes': 'Lenguajes',
+            'contacto': 'Contacto',
+            'vertodos': 'Ver Todos',
+            'todos': 'Todos',
+            
+            'versitio': 'Ver Sitio',
+            'vercodigo': 'Ver Código',
+            'volver': 'Volver',
+            'desc1': 'CRUD o ABM realizado en Java con SpringBoot.',
+            'desc2': 'Para el desarrollo de este software trabajé con una arquitectura ya armada.',
+            'desc3': 'Sobre ella formé la ruta para poder realizar el Alta, Baja y Modificación de datos, ',
+            'desc4': 'creando las capas de HTML, jQuery y Javascript, junto con SpringBoot hice las capas de Java de Rest, Dao y Service y la Entidad conectada a la Base de Datos. '
+
+
+            
+
+
+        },
+    };
+
+    $(function () {
+        $('.translate').click(function () {
+            var lang = $(this).attr('id');
+
+            $('.lang').each(function (index, element) {
+                $(this).text(arrLang[lang][$(this).attr('key')]);
+            });
+        });
+    });
+
+
+      
+</script>
+
+
+    <title>CRUD Java - FedericoSavastano.com</title>
+</head>
+<body>
+<!-- START NAV -->
+
+<header>
+    <nav id="navbar" class="nav">
+        <div id="logowrap">
+            <a id="logo" href="../index.html" target="_self" class="btn logo-details"><i class="fas fa-robot"></i>
+                <p>FEDERICO SAVASTANO . COM</p>
+            </a>
+        </div>
+        <button id="btnmenu" class="btn-menu-t">
+            <i id="btnmenumobile" class="fas fa-angle-double-down"></i> </button>
+
+
+
+        <div id="melements">
+            <ul class="nav-list">
+
+                <li class="dropdown">
+                    <div id="navlistdrop1" class="dropbtn lang" key="idiomas">Language</div>
+                    <div id="botoneswrapper" class="dropdown-content">
+                        <button class="buttonlang es translate link-nav" id="es">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                        </button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                        <button class="buttonlang en translate link-nav" id="en">
+                            <p id="textraden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                        </button>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="../index.html" class="link-nav">Home</a>
+                </li>
+
+
+
+                <li class="dropdown">
+                    <div id="navlistdrop1" class="dropbtn lang" key="trabajos">Trabajos</div>
+                    <div class="dropdown-content">
+                        <a href=".././index.html#projects" id="todos1" class="lang link-nav" key="todos">Todos</a>
+                        <a href="../webproyectos.html" class="link-nav">Web</a>
+                        <a href="../mobileproyectos.html" class="link-nav">Mobile</a>
+                        <a href="../softwareproyectos.html" class="link-nav">Software</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <div id="navlistdrop2" class="dropbtn lang" key="lenguajes">Lenguajes</div>
+                    <div class="dropdown-content">
+                        <a href=".././langs.html" id="todos2" class="lang" key="todos">Todos</a>
+                        <a href=".././langs.html#htmlcss" class="link-nav">Html & Css</a>
+                        <a href=".././langs.html#javascript" class="link-nav">Javascript</a>
+                        <a href=".././langs.html#java" class="link-nav">Java</a>
+                        <a href=".././langs.html#python" class="link-nav">Python</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=".././index.html#contactnewsection">
+                        <p class="lang link-nav" key="contacto">Contacto</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<!-- END NAV -->
+
+    <section id="proyectos-todos" class="proyectos-todos">
+    <img src=".././images/bg.jpg" alt="prog" />
+    </section>
+
+    <section id="projects" class="projects-section" >
+        
+        <h2 class="projects-section-type lang"  >
+            Software</h2>
+        <h2 class="projects-section-header">
+           CRUD Java
+        
+        </h2>
+
+
+
+        
+
+
+
+        <section class="web-project">
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <p class="lang" key="desc1">
+                       CRUD o ABM realizado en Java con SpringBoot.
+                    </p>
+                    <p  class="lang" key="desc2">
+                        Para el desarrollo de este software trabajé con una arquitectura ya armada.
+                    </p>
+                    <p  class="lang" key="desc3">
+                        Sobre ella formé la ruta para poder realizar el Alta, Baja y Modificación de datos, 
+                    </p>
+                     <p  class="lang" key="desc4">
+                        creando las capas de HTML, jQuery y Javascript, junto con SpringBoot hice las capas de Java de Rest, Dao y Service y la Entidad conectada a la Base de Datos.
+                    </p>
+                      
+                </div>
+                <div class="project-img">
+                    <a href="#"  >
+                        <img src="../images/soft/crud4.jpg" alt="crud" />
+                    </a>
+                </div>
+            </div>
+        
+            <!--div class="botonsitio">
+                <a class="btn btn-info lang" href="https://federicosavastano.github.io/headp_landing/" role="button" target="_blank" key="versitio">Ver sitio</a>
+            </div-->
+
+            <div class="botonsitio">
+        <a class="btn btn-info lang" key="vercodigo" href="https://github.com/FedericoSavastano/CRUDJava" role="button"
+          target="_blank">Ver código</a>
+      </div>
+        </section>
+    </section>
+
+    <div class="iframe-web">
+        <!--iframe src="https://github.com/FedericoSavastano/CRUDJava" style="border: 2px solid red; height: 800px; width: 100%;"></iframe-->
+        <img src=".././images/soft/crud2.jpg" alt="crud2" srcset=""  style="border: 2px solid red; height: 700px; width: 100%;">
+       <br></br>
+        <img src=".././images/soft/crud3.jpg" alt="crud2" srcset=""  style="border: 2px solid red; height: 700px; width: 100%;">
+        <br></br>
+        <img src=".././images/soft/crud4.jpg" alt="crud2" srcset=""  style="border: 2px solid red; height: 700px; width: 100%;">
+        <br></br>
+        <img src=".././images/soft/crud6.jpg" alt="crud2" srcset=""  style="border: 2px solid red; height: 700px; width: 100%;">
+    </div>
+    
+    
+    <!-- END OF PROJECT -->
+
+
+<div id="botonvolver">
+    <a href=".././index.html" class="btn btn-show-allvolver lang" key="volver"> Volver </a>
+</div>
+    <!-- FOOTER -->
+    
+<footer>
+    <div id="footermio">
+        <ul class="footerlist">
+            <li class="footerelement"> <a href="https://www.linkedin.com/in/federico-savastano-a45705158/"
+                    target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a> </li>
+            <li class="footerelement"> <a href="https://drive.google.com/file/d/119BhN2M1qnBm39YH_dKEz5zV6ZFhf9fK/view"
+                    target="_blank"><i class="fas fa-file"></i>CurriculumVitae</a> </li>
+            <li class="footerelement"> <a href="https://github.com/FedericoSavastano" target="_blank"><i
+                        class="fab fa-github"></i>GitHub</a>
+            </li>
+            <li class="footerelement"> <a href="mailto:f.savastano@hotmail.com"><i class="far fa-envelope"></i> Mail</a>
+            </li>
+
+        </ul>
+    </div>
+    <p>
+    <a href=".././index.html">FedericoSavastano.com </i></a>
+    </p>
+    
+    
+    </footer>
+    <!-- END OF FOOTER -->
+    <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/portfoliomio.css" />
+    <link rel="stylesheet" href="./css/traduccion.css">
+    <link rel="stylesheet" href="./css/trabajos.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+
+
+    </style>
+    
+    
+    
+    <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      var arrLang = {
+        'en': {
+          'trabajos': 'Works',
+          'lenguajes': 'Languages',
+          'contacto': 'Contact',
+          'vertodos': 'See All',
+          'todos': 'All',
+          'prog': 'web, mobile & software programmer',
+          'proye': 'Here are some of my projects',
+          'idiomas': 'Idioma'
+          
+        },
+        'es': {
+          'trabajos': 'Trabajos',
+          'lenguajes': 'Lenguajes',
+          'contacto': 'Contacto',
+          'vertodos': 'Ver Todos',
+          'todos': 'Todos',
+          'prog': 'programador web, mobile & software',
+          'proye': 'Estos son algunos de mis proyectos',
+          'idiomas': "Language"
+
+        },
+      };
+
+      $(function () {
+        $('.translate').click(function () {
+          var lang = $(this).attr('id');
+
+          $('.lang').each(function (index, element) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+          });
+        });
+      });
+
+      
+
+    </script>
+
+    <title>Federico Savastano.com</title>
+  </head>
+  <body>
+  <!-- START NAV -->
+  
+  <header>
+    <nav id="navbar" class="nav">
+      <div id="logowrap">
+      <a id="logo" href="./index.html" target="_self" class="btn logo-details"><i class="fas fa-robot"></i>
+        <p>FEDERICO SAVASTANO . COM</p>
+      </a>
+</div>
+      <button id="btnmenu" class="btn-menu-t">
+<i id="btnmenumobile" class="fas fa-angle-double-down"></i>      </button>
+      
+
+      
+<div id="melements">
+    <ul class="nav-list">
+      
+<li class="dropdown">
+  <div id="navlistdrop1" class="dropbtn lang" key="idiomas">Language</div>
+  <div id="botoneswrapper"class="dropdown-content">
+  <button class="buttonlang es translate link-nav" id="es">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+  </button>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+  <button class="buttonlang en translate link-nav" id="en">
+    <p id="textraden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+  </button>
+
+  </div>
+</li>
+<li>
+  <a href="./index.html" class="link-nav" >Home</a>
+</li>
+
+
+
+      <li class="dropdown">
+        <div id="navlistdrop1" class="dropbtn lang" key="trabajos">Trabajos</div>
+        <div class="dropdown-content">
+          <a href="./index.html#projects"  id="todos1" class="lang link-nav" key="todos">Todos</a>
+          <a href="./webproyectos.html" class="link-nav">Web</a>
+          <a href="./mobileproyectos.html" class="link-nav" >Mobile</a>
+          <a href="./softwareproyectos.html" class="link-nav">Software</a>
+        </div>
+      </li>
+    
+      <li class="dropdown">
+        <div id="navlistdrop2" class="dropbtn lang" key="lenguajes">Lenguajes</div>
+        <div class="dropdown-content">
+          <a href="./langs.html" id="todos2" class="lang" key="todos">Todos</a>
+          <a href="./langs.html#htmlcss" class="link-nav">Html & Css</a>
+          <a href="./langs.html#javascript" class="link-nav">Javascript</a>
+          <a href="./langs.html#java" class="link-nav">Java</a>
+          <a href="./langs.html#python" class="link-nav">Python</a>
+        </div>
+      </li>
+      <li>
+        <a href="./index.html#contactnewsection"><p class="lang link-nav" key="contacto">Contacto</p></a>
+      </li>
+    </ul>
+    </div>
+    </nav>
+   
+  </header>
+  
+  <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+      <!--span class="bars">--------------</span-->
+      <div class="bannerbarras"></div>
+
+      <h1>Federico Savastano</h1>
+
+      <div class="bannerbarrasanimadas">
+        <p>&lt;&lt;&lt;</p>
+        <p>hello world</p>
+        <p>>>></p>
+      </div>
+
+      <p class="lang" key="prog">programador web, mobile & software</p>
+      <div class="bannerbarras"></div>
+      <!--span class="bars">--------------</span-->
+      <img
+        src="./images/bg.jpg"
+        alt="prog"
+      />
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header lang" key="proye">
+        Estos son algunos de mis proyectos
+      </h2>
+      <div class="projects-type" id="projects-web">
+        <h2>Web</h2>
+      </div>
+      <div class="projects-grid">
+        <a
+          href="./web/web-4x4sinlimite.html"
+          
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./images/web/4x4sinlimite2.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            <!--Esto es para que aparezcan los simbolos de codigo-->
+            4x4 Sin Límite
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+
+        <a
+          href="./web/web-estadiaenlaplata.html"
+          
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./images/web/estadialp2.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Estadía En La Plata
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="./web/web-colegioalberdi.html"
+          
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./images/web/basesalberdi.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Colegio Bases de Alberdi
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+
+      <a href="./webproyectos.html" class="btn btn-show-all"> <p class="lang" key="vertodos"> 
+      Ver Todos</p> </a>
+         
+    
+    <br> <br>
+      <!--MOBILE-->
+      <div class="projects-type" id="projects-mobile">
+        <h2>Mobile</h2>
+      </div>
+      <div class="projects-grid">
+        <a
+          href=""
+          
+          class="project project-tile"
+        >
+          <!-- <img
+            class="project-image"
+            src=""
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+           Proximamente
+            <span class="code">&#47;&gt;</span>
+          </p> -->
+        </a>
+
+          <a href="" class="project project-tile">
+            <!-- <img class="project-image" src="" alt="project" /> -->
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Proximamente
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+
+          <a href="" class="project project-tile">
+            <!-- <img class="project-image" src="" alt="project" />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Proximamente
+              <span class="code">&#47;&gt;</span>
+            </p> -->
+          </a>
+        
+      </div>
+<a href="./mobileproyectos.html" class="btn btn-show-all  lang" key="vertodos">Ver Todos </a>
+<br> <br>
+
+<!--SOFTWARE-->
+      <div class="projects-type" id="projects-software">
+        <h2>Software</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- PROYECTO 1 -->
+        <a href="./soft/soft-crudjava.html" class="project project-tile">
+          <img class="project-image" src="./images/soft/crud4.jpg" alt="project" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            CRUD Java
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <!-- PROYECTO 2 -->
+        <a href="" class="project project-tile">
+          <!-- <img class="project-image" src="" alt="project" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Proximamente
+            <span class="code">&#47;&gt;</span>
+          </p> -->
+        </a>
+        <!-- PROYECTO 3 -->
+        <a href="" class="project project-tile">
+          <!-- <img class="project-image" src="" alt="project" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Proximamente
+            <span class="code">&#47;&gt;</span>
+          </p> -->
+        </a>
+      </div>
+
+    <a href="./softwareproyectos.html" class="btn btn-show-all lang" key="vertodos" >Ver Todos </a>
+    
+
+    <!-- END PROJECTS SECTION -->
+
+<br> <br> <br> <br> <br> <br>
+    <!-- LENGUAJES SECTION -->
+    <section id="lenguajeshome">
+<div class="langs-type" id="langshome">
+  <h2 class="lang" key="lenguajes">Lenguajes</h2>
+</div>
+<br> 
+
+    <div class="photo-gridlanghome">
+
+      <a href="./langs.html#java">
+      <div class="cardlang" id="javahometitle"
+       >
+      <i class="fab fa-java" id="javahome"></i>
+        Java
+      </div>
+      </a>
+
+      <a href="./langs.html#javascript">
+      <div class="cardlang" id="jshometitle">
+        
+        <i class="fab fa-js-square" id="jshome"></i>
+        Javascript
+      </div>
+      </a>
+
+      <a href="./langs.html#htmlcss">
+<div class="cardlang" id="htmlhometitle">
+  <i class="fab fa-html5"  id="htmlhome"></i> <i class="fab fa-css3-alt" id="csshome" ></i>
+  HTML & CSS
+</div>
+</a>
+
+<a href="./langs.html#python">
+<div class="cardlang" id="pythonhometitle">
+  <i class="fab fa-python" id="pythonhome"></i>
+  Python
+</div>
+
+</a>
+
+
+      
+    
+    </div>
+
+    </section>
+    </section>
+    <!-- END LENGUAJES SECTION -->
+
+    <!-- END CONTACT SECTION -->
+
+<br> <br>
+
+    <!--contact new-->
+    <br id="contactnewsection"><br>
+<section id="contactnewsect">
+  <div>
+  <h1 class="lang" key="contacto">Contacto</h1>
+  </div>
+<div class="contactnew">
+  
+    <ul class="contactnewlist">
+      <li class="contactnewelement btn contact-details"> <a href="https://www.linkedin.com/in/federico-savastano-a45705158/" target="_blank"><i
+            class="fab fa-linkedin-in" id="linkedin"></i>LinkedIn</a> </li>
+      <li class="contactnewelement btn contact-details"> <a href="https://drive.google.com/file/d/1FfnhqidhQmzoDbVB2E-t8go4CX6zAVSv/view" target="_blank"><i
+            class="fas fa-file" id="cv"></i><p>Curriculum Vitae</p></a> </li>
+      <li class="contactnewelement btn contact-details"> <a href="https://github.com/FedericoSavastano" target="_blank"><i class="fab fa-github" id="github"></i>GitHub</a>
+      </li>
+      <li class="contactnewelement btn contact-details"> <a href="mailto:f.savastano@hotmail.com" target="_blank"><i class="far fa-envelope" id="mail"></i> Mail</a> </li>
+    </ul>
+</div>
+</section>
+    <!--end of contact new-->
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+      
+      <p>
+        <a href="./index.html"
+          >FedericoSavastano.com </i
+        ></a>
+      </p>
+    
+
+      
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+  </body>
+
+  <script src="./js/app.js"></script>
+
+</html>

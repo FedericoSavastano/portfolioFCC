@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href=".././css/portfoliomio.css" />
+<link rel="stylesheet" href=".././css/traduccion.css">
+<link rel="stylesheet" href=".././css/trabajos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+  var arrLang = {
+    'en': {
+      'trabajos': 'Works',
+      'lenguajes': 'Languages',
+      'contacto': 'Contact',
+      'vertodos': 'See All',
+      'todos': 'All',
+      'sitioweb': 'Web Site',
+      'versitio': 'View Site',
+      'vercodigo': 'View Code',
+      'volver': 'Back',
+      'desc1': 'Dynamic website made with html, css and Javascript.',
+      'desc2': 'Javascript dynamic menu.',
+      'desc3': 'The menu elements are written only in a single array const in js, from there they are dynamicaly loaded to the html.',
+      'desc4': 'You only need to modify that single array to create, read, update, and delete elements. Possess buttons that filter by category the elements shown. This same logic used in this example can be used with any api.'
+
+    },
+    'es': {
+      'trabajos': 'Trabajos',
+      'lenguajes': 'Lenguajes',
+      'contacto': 'Contacto',
+      'vertodos': 'Ver Todos',
+      'todos': 'Todos',
+      'sitioweb': 'Sitio Web',
+      'versitio': 'Ver Sitio',
+      'vercodigo': 'Ver Código',
+      'volver': 'Volver',
+      'desc1': 'Sitio web desarrollado html, css y JavaScript.',
+      'desc2': 'Menú Dinámico Con JavaScript.',
+      'desc3': 'Los elementos del menú estan cargados en una única constante array de js, desde ahi se cargan dinámicamente al html.',
+      'desc4': 'Solo se necesita modificar este array para agregar, modificar o quitar elementos. Posee botones que filtran por categoria los elementos mostrados.Esta misma lógica empleada en este ejemplo puede ser utilizada con cualquier api.'
+          
+      
+    },
+  };
+
+  $(function () {
+    $('.translate').click(function () {
+      var lang = $(this).attr('id');
+
+      $('.lang').each(function (index, element) {
+        $(this).text(arrLang[lang][$(this).attr('key')]);
+      });
+    });
+  });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log(navigator.language);
+
+  var navlang = navigator.language;
+  var navlangdet = navlang.substring(0, 2);
+
+  if(navlangdet === "en" ){
+    navlang = "en";
+  }else if(navlangdet === "es"){
+    navlang ="es";
+  } 
+  
+  console.log(navlang);
+  $(function () {
+        
+          
+
+          $('.lang').each(function (index, element) {
+            $(this).text(arrLang[navlang][$(this).attr('key')]);
+          });
+        
+      });
+
+
+
+
+});
+      
+</script>
+
+
+
+  <title>Lorem Ipsum Restaurant - FedericoSavastano.com</title>
+</head>
+
+
+<body>
+<!-- START NAV -->
+
+<header>
+  <nav id="navbar" class="nav">
+    <div id="logowrap">
+      <a id="logo" href="../index.html" target="_self" class="btn logo-details"><i class="fas fa-robot"></i>
+        <p>FEDERICO SAVASTANO . COM</p>
+      </a>
+    </div>
+    <button id="btnmenu" class="btn-menu-t">
+      <i id="btnmenumobile" class="fas fa-angle-double-down"></i> </button>
+
+
+
+    <div id="melements">
+      <ul class="nav-list">
+
+        <li class="dropdown">
+          <div id="navlistdrop1" class="dropbtn lang" key="idiomas">Language</div>
+          <div id="botoneswrapper" class="dropdown-content">
+            <button class="buttonlang es translate link-nav" id="es">
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+            </button>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+            <button class="buttonlang en translate link-nav" id="en">
+              <p id="textraden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+            </button>
+
+          </div>
+        </li>
+        <li>
+          <a href="../index.html" class="link-nav">Home</a>
+        </li>
+
+
+
+        <li class="dropdown">
+          <div id="navlistdrop1" class="dropbtn lang" key="trabajos">Trabajos</div>
+          <div class="dropdown-content">
+            <a href=".././index.html#projects" id="todos1" class="lang link-nav" key="todos">Todos</a>
+            <a href="../webproyectos.html" class="link-nav">Web</a>
+            <a href="../mobileproyectos.html" class="link-nav">Mobile</a>
+            <a href="../softwareproyectos.html" class="link-nav">Software</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div id="navlistdrop2" class="dropbtn lang" key="lenguajes">Lenguajes</div>
+          <div class="dropdown-content">
+            <a href=".././langs.html" id="todos2" class="lang" key="todos">Todos</a>
+            <a href=".././langs.html#htmlcss" class="link-nav">Html & Css</a>
+            <a href=".././langs.html#javascript" class="link-nav">Javascript</a>
+            <a href=".././langs.html#java" class="link-nav">Java</a>
+            <a href=".././langs.html#python" class="link-nav">Python</a>
+          </div>
+        </li>
+        <li>
+          <a href=".././index.html#contactnewsection">
+            <p class="lang link-nav" key="contacto">Contacto</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+<!-- END NAV -->
+
+  <section id="proyectos-todos" class="proyectos-todos">
+
+  <img src=".././images/bg.jpg" alt="prog" />
+  </section>
+
+  <section id="projects" class="projects-section" >
+
+      <h2 class="projects-section-type lang" key="sitioweb" >
+        Sitio web</h2> 
+        <h2 class="projects-section-header" >
+         Lorem Ipsum Restaurant
+        
+      </h2>
+
+    <section class="web-project">
+      <div class="project-wrapper">
+        <div class="project-text">
+          <p class="lang" key="desc1">
+            Sitio web desarrollado html, css y JavaScript.
+          </p>
+          <p class="lang" key="desc2">
+            Menú Dinámico Con JavaScript
+          </p>
+          <p class="lang" key="desc3">
+            Los elementos del menú estan cargados en una única constante array de js, desde ahi se cargan dinámicamente al html.
+          </p>
+          <p class="lang" key="desc4">
+          Solo se necesita modificar este array para agregar, modificar o quitar elementos. Posee botones que filtran por
+          categoria los elementos mostrados. Esta misma lógica empleada en este ejemplo puede ser utilizada con cualquier api.
+          </p>
+        </div>
+        <div class="project-img">
+          <a href="https://federicosavastano.github.io/jsRestaurant/">
+            <img src="../images/web/jsrestaurant.jpg" alt="jsrestaurant" />
+          </a>
+        </div>
+      </div>
+
+      <div class="botonsitio">
+        <a class="btn btn-info lang" key="versitio" href="https://federicosavastano.github.io/jsRestaurant/" role="button" target="_blank">Ver sitio</a>
+      </div>
+
+      <div class="botonsitio">
+        <a class="btn btn-info lang" key="vercodigo" href="https://github.com/FedericoSavastano/jsRestaurant" role="button"
+          target="_blank">Ver código</a>
+      </div>
+    </section>
+  </section>
+
+  <div class="iframe-web">
+    <iframe src="https://federicosavastano.github.io/jsRestaurant/"
+      style="border: 2px solid red; height: 800px; width: 100%;"></iframe>
+  </div>
+ 
+
+  <!-- END OF PROJECT -->
+
+  <div id="botonvolver">
+    <a href=".././index.html" class="btn btn-show-allvolver lang" key="volver"> Volver </a>
+  </div>
+  <!-- FOOTER -->
+
+  <footer>
+    <div id="footermio">
+      <ul class="footerlist">
+        <li class="footerelement"> <a href="https://www.linkedin.com/in/federico-savastano-a45705158/"
+            target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a> </li>
+        <li class="footerelement"> <a href="https://drive.google.com/file/d/119BhN2M1qnBm39YH_dKEz5zV6ZFhf9fK/view"
+            target="_blank"><i class="fas fa-file"></i>CurriculumVitae</a> </li>
+        <li class="footerelement"> <a href="https://github.com/FedericoSavastano" target="_blank"><i
+              class="fab fa-github"></i>GitHub</a>
+        </li>
+        <li class="footerelement"> <a href="mailto:f.savastano@hotmail.com"><i class="far fa-envelope"></i> Mail</a>
+        </li>
+
+      </ul>
+    </div>
+    <p>
+      <a href=".././index.html">FedericoSavastano.com </i></a>
+      </p>
+      
+      
+      </footer>
+      <!-- END OF FOOTER -->
+      <script src="../js/app.js"></script>
+</body>
+
+</html>

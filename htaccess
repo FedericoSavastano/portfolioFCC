@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://federicosavastano.com/$1 [R=301,L,QSA]
+</IfModule>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kuokoacelulares.federicosavastano.com [OR]
+RewriteCond %{HTTP_HOST} ^www.kuokoacelulares.federicosavastano.com$
+RewriteRule ^(.*)$ http://federicosavastano.com/kuokoacelulares [R=301,L]
+RewriteCond %{HTTP_HOST} ^oscommercetest.federicosavastano.com [OR]
+RewriteCond %{HTTP_HOST} ^www.oscommercetest.federicosavastano.com$
+RewriteRule ^(.*)$ http://federicosavastano.com/oscommercetest [R=301,L]
